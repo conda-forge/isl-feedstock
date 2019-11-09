@@ -1,4 +1,4 @@
-{% set version = "0.21" %}
+{% set version = "0.22" %}
 
 package:
   name: isl
@@ -7,7 +7,7 @@ package:
 source:
   fn: isl-{{ version }}.tar.bz2
   url: http://isl.gforge.inria.fr/isl-{{ version }}.tar.bz2
-  md5: e2be862b79d74234e468981bcae2a964
+  md5: 4e6b2a1dd20b2ac011730a24580ff7a9
 
 build:
   number: 0
