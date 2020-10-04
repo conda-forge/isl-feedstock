@@ -13,7 +13,7 @@ source:
     - no_undefined.patch  # [win]
 
 build:
-  number: 1
+  number: 2
   run_exports:
     - {{ pin_subpackage("isl", max_pin="x.x") }}
 
@@ -26,8 +26,10 @@ requirements:
     - make                   # [unix]
   host:
     - gmp             # [unix]
+    - mpir            # [win]
   run:
     - gmp             # [unix]
+    - mpir            # [win]
 
 test:
   commands:
