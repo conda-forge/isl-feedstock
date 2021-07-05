@@ -1,4 +1,4 @@
-{% set version = "0.22.1" %}
+{% set version = "0.24" %}
 
 package:
   name: isl
@@ -13,7 +13,7 @@ source:
     - no_undefined.patch  # [win]
 
 build:
-  number: 2
+  number: 0
   run_exports:
     - {{ pin_subpackage("isl", max_pin="x.x") }}
 
