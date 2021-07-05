@@ -4,7 +4,7 @@ if [[ "$target_platform" == "win-64" ]]; then
   export CFLAGS="$CFLAGS -O3 -Dstrdup=_strdup"
   export ac_cv_have_decl__BitScanForward=yes
   autoreconf -iv
-  ./configure --prefix=$PREFIX --with-int=imath-32 --disable-shared || (cat config.log && false)
+  ./configure --prefix=$PREFIX --with-int=imath-32 --disable-shared CFLAGS="$CFLAGS" || (cat config.log && false)
   patch_libtool
 else
   # Get an updated config.sub and config.guess
