@@ -7,7 +7,7 @@ index ecd9272e..3fcba36f 100644
  		return isl_stat_error;					\
  	free(options->field);						\
 -	options->field = strdup(val);					\
-+	options->field = __strdup(val);					\
++	options->field = _strdup(val);					\
  	if (!options->field)						\
  		return isl_stat_error;					\
  	return isl_stat_ok;						\
