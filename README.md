@@ -171,5 +171,6 @@ Feedstock Maintainers
 =====================
 
 * [@frol](https://github.com/frol/)
+* [@inducer](https://github.com/inducer/)
 * [@isuruf](https://github.com/isuruf/)
 
