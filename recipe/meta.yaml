@@ -7,7 +7,7 @@ package:
 source:
   fn: isl-{{ version }}.tar.xz
   url: https://libisl.sourceforge.io/isl-{{ version }}.tar.xz
-  sha256: 26e6e4d60ad59b3fff9948eb36743f0c874e124e410ef5bab930d0f546bc580d
+  sha256: 043105cc544f416b48736fff8caf077fb0663a717d06b1113f16e391ac99ebad
   patches:
     # From https://github.com/msys2/MINGW-packages/blob/master/mingw-w64-isl/isl-0.14.1-no-undefined.patch
     - no_undefined.patch  # [win]
