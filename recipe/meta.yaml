@@ -11,6 +11,8 @@ source:
   patches:
     # From https://github.com/msys2/MINGW-packages/blob/master/mingw-w64-isl/isl-0.14.1-no-undefined.patch
     - no_undefined.patch  # [win]
+    # https://github.com/conda-forge/isl-feedstock/pull/27#issuecomment-874363957
+    - isl-strdup-win.patch  # [win]
 
 build:
   number: 0
