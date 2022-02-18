@@ -1,19 +1,21 @@
-{% set version = "0.22.1" %}
+{% set version = "0.24" %}
 
 package:
   name: isl
   version: {{ version }}
 
 source:
-  fn: isl-{{ version }}.tar.bz2
-  url: http://isl.gforge.inria.fr/isl-{{ version }}.tar.bz2
-  sha256: 1a668ef92eb181a7c021e8531a3ca89fd71aa1b3744db56f68365ab0a224c5cd
+  fn: isl-{{ version }}.tar.xz
+  url: https://libisl.sourceforge.io/isl-{{ version }}.tar.xz
+  sha256: 043105cc544f416b48736fff8caf077fb0663a717d06b1113f16e391ac99ebad
   patches:
     # From https://github.com/msys2/MINGW-packages/blob/master/mingw-w64-isl/isl-0.14.1-no-undefined.patch
     - no_undefined.patch  # [win]
+    # https://github.com/conda-forge/isl-feedstock/pull/27#issuecomment-874363957
+    - isl-strdup-win.patch  # [win]
 
 build:
-  number: 2
+  number: 0
   run_exports:
     - {{ pin_subpackage("isl", max_pin="x.x") }}
 
@@ -44,3 +46,4 @@ extra:
   recipe-maintainers:
     - frol
     - isuruf
+    - inducer

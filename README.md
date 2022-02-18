@@ -13,21 +13,7 @@ Current build status
 ====================
 
 
-<table><tr>
-    <td>Travis</td>
-    <td>
-      <a href="https://travis-ci.com/conda-forge/isl-feedstock">
-        <img alt="macOS" src="https://img.shields.io/travis/com/conda-forge/isl-feedstock/master.svg?label=macOS">
-      </a>
-    </td>
-  </tr><tr>
-    <td>Drone</td>
-    <td>
-      <a href="https://cloud.drone.io/conda-forge/isl-feedstock">
-        <img alt="linux" src="https://img.shields.io/drone/build/conda-forge/isl-feedstock/master.svg?label=Linux">
-      </a>
-    </td>
-  </tr>
+<table>
     
   <tr>
     <td>Azure</td>
@@ -104,6 +90,7 @@ Installing `isl` from the `conda-forge` channel can be achieved by adding `conda
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `isl` can be installed with:
@@ -122,7 +109,8 @@ conda search isl --channel conda-forge
 About conda-forge
 =================
 
-[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
+[![Powered by
+NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](https://numfocus.org)
 
 conda-forge is a community-led conda channel of installable packages.
 In order to provide high-quality builds, the process has been automated into the
@@ -174,14 +162,15 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers
 =====================
 
 * [@frol](https://github.com/frol/)
+* [@inducer](https://github.com/inducer/)
 * [@isuruf](https://github.com/isuruf/)
 
