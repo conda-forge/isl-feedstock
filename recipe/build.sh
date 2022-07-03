@@ -7,6 +7,10 @@ if [[ "$target_platform" == "win-64" ]]; then
   ./configure --prefix=$PREFIX --with-int=imath-32 --disable-shared CFLAGS="$CFLAGS" || (cat config.log && false)
   patch_libtool
 else
+  if [[ "$target_platform" == osx* ]]; then
+    CXXFLAGS="${CXXFLAGS} -D_LIBCPP_DISABLE_AVAILABILITY"
+  fi
+
   # Get an updated config.sub and config.guess
   cp $BUILD_PREFIX/share/libtool/build-aux/config.* .
   ./configure --prefix="$PREFIX" --with-int=imath-32 --disable-static
