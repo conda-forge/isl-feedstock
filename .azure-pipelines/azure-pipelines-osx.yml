@@ -5,14 +5,20 @@
 jobs:
 - job: osx
   pool:
-    vmImage: macOS-10.15
+    vmImage: macOS-11
   strategy:
     matrix:
-      osx_64_:
-        CONFIG: osx_64_
+      osx_64_val_int_typegmp:
+        CONFIG: osx_64_val_int_typegmp
         UPLOAD_PACKAGES: 'True'
-      osx_arm64_:
-        CONFIG: osx_arm64_
+      osx_64_val_int_typeimath32:
+        CONFIG: osx_64_val_int_typeimath32
+        UPLOAD_PACKAGES: 'True'
+      osx_arm64_val_int_typegmp:
+        CONFIG: osx_arm64_val_int_typegmp
+        UPLOAD_PACKAGES: 'True'
+      osx_arm64_val_int_typeimath32:
+        CONFIG: osx_arm64_val_int_typeimath32
         UPLOAD_PACKAGES: 'True'
   timeoutInMinutes: 360
 
