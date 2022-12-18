@@ -11,4 +11,4 @@ gmp:
 target_platform:
 - win-64
 val_int_type:
-- imath32
+- imath-32

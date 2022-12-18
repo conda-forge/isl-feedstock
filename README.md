@@ -41,10 +41,10 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_val_int_typeimath32</td>
+              <td>linux_64_val_int_typeimath-32</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3944&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/isl-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_val_int_typeimath32" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/isl-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_val_int_typeimath-32" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -55,10 +55,10 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>linux_aarch64_val_int_typeimath32</td>
+              <td>linux_aarch64_val_int_typeimath-32</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3944&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/isl-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_val_int_typeimath32" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/isl-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_val_int_typeimath-32" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -69,10 +69,10 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>linux_ppc64le_val_int_typeimath32</td>
+              <td>linux_ppc64le_val_int_typeimath-32</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3944&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/isl-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_val_int_typeimath32" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/isl-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_val_int_typeimath-32" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -83,10 +83,10 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_val_int_typeimath32</td>
+              <td>osx_64_val_int_typeimath-32</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3944&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/isl-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_val_int_typeimath32" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/isl-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_val_int_typeimath-32" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -97,10 +97,10 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>osx_arm64_val_int_typeimath32</td>
+              <td>osx_arm64_val_int_typeimath-32</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3944&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/isl-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_val_int_typeimath32" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/isl-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_val_int_typeimath-32" alt="variant">
                 </a>
               </td>
             </tr><tr>

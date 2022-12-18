@@ -19,7 +19,7 @@ macos_machine:
 target_platform:
 - osx-64
 val_int_type:
-- imath32
+- imath-32
 zip_keys:
 - - c_compiler_version
   - cxx_compiler_version
