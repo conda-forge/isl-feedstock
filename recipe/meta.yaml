@@ -5,7 +5,7 @@
 {% set val_int_type = "imath-32" %}
 {% endif %}
 
-{% if val_int_type == "gmp" %}
+{% if val_int_type == "imath-32" %}
 {% set build_num = build_num + 100 %}
 {% endif %}
 
@@ -26,7 +26,9 @@ build:
   number: {{ build_num }}
   string: {{ val_int_type.replace("-", "") }}_h{{ PKG_HASH }}_{{ build_num }}
   run_exports:
-    - isl {{ version }} {{ val_int_type }}_*
+    # gmp version has more functions
+    - isl {{ version }}.* gmp_*  # [val_int_type == "gmp"]
+    - isl {{ version }}.*        # [val_int_type != "gmp"]
   track_features:
     - isl_{{ val_int_type }}   # [val_int_type != "imath32"]
 
