@@ -1,5 +1,10 @@
 {% set version = "0.25" %}
 {% set build_num = 1 %}
+
+{% if val_int_type is undefined %}
+{% set val_int_type = "imath-32" %}
+{% endif %}
+
 {% if val_int_type == "gmp" %}
 {% set build_num = build_num + 100 %}
 {% endif %}
@@ -19,7 +24,7 @@ source:
 
 build:
   number: {{ build_num }}
-  string: {{ val_int_type }}_h{{ PKG_HASH }}_{{ build_num }}
+  string: {{ val_int_type.replace("-", "") }}_h{{ PKG_HASH }}_{{ build_num }}
   run_exports:
     - isl {{ version }} {{ val_int_type }}_*
   track_features:
