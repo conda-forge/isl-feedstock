@@ -5,6 +5,7 @@ if [[ "$target_platform" == "win-64" ]]; then
   export ac_cv_have_decl__BitScanForward=yes
   export build_alias=x86_64-pc-mingw64
   export host_alias=x86_64-pc-mingw64
+  export CC_FOR_BUILD=$CC
   autoreconf -iv
   ./configure --prefix=$PREFIX --with-int=$val_int_type --disable-shared CFLAGS="$CFLAGS" || (cat config.log && false)
   patch_libtool
