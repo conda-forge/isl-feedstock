@@ -1,11 +1,19 @@
 {% set version = "0.25" %}
+{% set build_num = 1 %}
+
+{% if val_int_type is undefined %}
+{% set val_int_type = "imath-32" %}
+{% endif %}
+
+{% if val_int_type == "imath-32" %}
+{% set build_num = build_num + 100 %}
+{% endif %}
 
 package:
   name: isl
   version: {{ version }}
 
 source:
-  fn: isl-{{ version }}.tar.xz
   url: https://libisl.sourceforge.io/isl-{{ version }}.tar.xz
   sha256: be7b210647ccadf90a2f0b000fca11a4d40546374a850db67adb32fad4b230d9
   patches:
@@ -15,9 +23,14 @@ source:
     - isl-strdup-win.patch  # [win]
 
 build:
-  number: 0
+  number: {{ build_num }}
+  string: {{ val_int_type.replace("-", "") }}_h{{ PKG_HASH }}_{{ build_num }}
   run_exports:
-    - {{ pin_subpackage("isl", max_pin="x.x") }}
+    # gmp version has more functions
+    - isl {{ version }}.* gmp_*  # [val_int_type == "gmp"]
+    - isl {{ version }}.*        # [val_int_type != "gmp"]
+  track_features:
+    - isl_{{ val_int_type }}   # [val_int_type != "imath32"]
 
 requirements:
   build:
@@ -26,6 +39,9 @@ requirements:
     - libtool                # [unix]
     - autotools_clang_conda  # [win]
     - make                   # [unix]
+  host:
+    - gmp       # [val_int_type == "gmp"]
+  run:
 
 test:
   commands:
@@ -34,6 +50,8 @@ test:
     - test ! -f "$PREFIX/lib/libisl.a"          # [unix]
     - test -f "$PREFIX/lib/libisl${SHLIB_EXT}"  # [unix]
     - test -d "$PREFIX/include/isl"             # [unix]
+    - test ! -f "$PREFIX/include/isl/val_gmp.h"   # [unix and val_int_type != "gmp"]
+    - test -f "$PREFIX/include/isl/val_gmp.h"     # [unix and val_int_type == "gmp"]
 
 about:
   home: http://isl.gforge.inria.fr/

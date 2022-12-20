@@ -1,0 +1,3 @@
+val_int_type:
+  - imath-32
+  - gmp      # [unix]
