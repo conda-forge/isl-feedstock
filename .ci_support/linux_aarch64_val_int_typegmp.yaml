@@ -20,6 +20,8 @@ docker_image:
 - quay.io/condaforge/linux-anvil-aarch64
 gmp:
 - '6'
+imath:
+- 3.1.7
 target_platform:
 - linux-aarch64
 val_int_type:
