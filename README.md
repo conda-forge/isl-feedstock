@@ -1,11 +1,11 @@
-About isl
-=========
+About isl-feedstock
+===================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/isl-feedstock/blob/main/LICENSE.txt)
 
 Home: http://isl.gforge.inria.fr/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/isl-feedstock/blob/main/LICENSE.txt)
 
 Summary: a thread-safe C library for manipulating sets and relations of integer points bounded by affine constraints.
 
