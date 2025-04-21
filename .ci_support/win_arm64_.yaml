@@ -1,5 +1,5 @@
 c_compiler:
-- vs2019
+- vs2022
 c_stdlib:
 - vs
 channel_sources:
@@ -7,10 +7,10 @@ channel_sources:
 channel_targets:
 - conda-forge main
 cxx_compiler:
-- vs2019
+- vs2022
 imath:
 - 3.1.12
 target_platform:
-- win-64
+- win-arm64
 val_int_type:
 - imath-32
