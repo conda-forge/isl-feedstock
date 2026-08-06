@@ -11,6 +11,6 @@ cxx_compiler:
 imath:
 - 3.2.2
 target_platform:
-- win-64
+- win-arm64
 val_int_type:
 - imath-32
