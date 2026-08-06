@@ -9,7 +9,7 @@ channel_targets:
 cxx_compiler:
 - vs2022
 imath:
-- 3.1.12
+- 3.2.2
 target_platform:
 - win-arm64
 val_int_type:
