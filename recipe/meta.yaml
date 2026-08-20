@@ -11,7 +11,7 @@
 
 package:
   name: isl
-  version: {{ version }}
+  version: "{{ version }}"
 
 source:
   url: https://libisl.sourceforge.io/isl-{{ version }}.tar.xz
